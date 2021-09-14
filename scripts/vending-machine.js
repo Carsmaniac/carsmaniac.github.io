@@ -256,6 +256,10 @@ function mouseClicked() {
                             animStage = 1;
                             animMove = 1;
                             zineDropped = false;
+                        } else if (buttonsPressed.join("") == "069" || buttonsPressed.join("") == "420") {
+                            window.open("https://www.youtube.com/watch?v=CYqq9Ovz_9c");
+                            interactiveButtons = true;
+                            buttonsPressed = [];
                         } else {
                             buttonError.play();
                             interactiveButtons = true;
