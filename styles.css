@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
 
 
 /* Global reset */
@@ -17,12 +19,16 @@
 /* Styling */
 
 html {
-    background: #252529;
+    background: #212124;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 62.5%;
-    text-align: center;
+    text-align: left;
     color: #BABABA;
+}
+
+main {
+    padding-top: 10rem;
 }
 
 h1 {
@@ -30,23 +36,27 @@ h1 {
     margin-bottom: 2rem;
 }
 
-p {
-    margin-bottom: 8rem;
-    font-size: 1.8rem;
-}
-
 h2 {
-    text-align: left;
     font-size: 2.8rem;
     margin-top: 6rem;
     margin-bottom: 3rem;
 }
 
-li {
-    list-style: none;
-    text-align: left;
+p {
     font-size: 1.8rem;
     margin-bottom: 1.2rem;
+    line-height: 1.4;
+}
+
+p.centre {
+    margin-bottom: 8rem;
+}
+
+li {
+    /* list-style: none; */
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
 }
 
 a {
@@ -63,16 +73,19 @@ a:hover {
 }
 
 img {
-    width: 30rem;
-    max-width: 60%;
-    margin: 15rem auto 5rem auto;
-    border-radius: 2rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s;
+    width: 100%;
+    display: block;
 }
 
-img:hover {
-    transform: rotate(2deg);
+
+
+.centre {
+    text-align: center;
+}
+
+.small {
+    font-size: 1.3rem;
+    font-weight: 300;
 }
 
 #wrapper {
@@ -81,4 +94,67 @@ img:hover {
     width: 80%;
     max-width: 650px;
     margin-bottom: 20rem;
+}
+
+#logo {
+    width: 30rem;
+    max-width: 60%;
+    margin: 5rem auto 10rem auto;
+    border-radius: 2rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+#logo:hover {
+    transform: rotate(2deg);
+}
+
+
+
+nav {
+    margin: 2rem auto 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+nav img {
+    width: 4rem;
+    border-radius: 1rem;
+}
+
+nav h3 {
+    font-size: 2.5rem;
+    padding: 0.6rem 1rem 0 1rem;
+}
+
+nav a {
+    display: inherit;
+}
+
+#centre-nav {
+    display: flex;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.download p, .download li {
+    margin-bottom: 0.5rem;
+}
+
+.download {
+    margin-bottom: 3.5rem;
+}
+
+main h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.4;
+    font-weight: 700;
+    margin-top: 4rem;
+}
+
+.monospace {
+    font-family: "Anonymous Pro";
+    background: #404040;
+    padding: 0.2rem;
 }

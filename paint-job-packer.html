@@ -1,0 +1,136 @@
+<!doctype html>
+<!-- Sliding into yo' HTML comments -->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="A lightweight paint job mod making tool for ATS and ETS 2">
+        <meta name="viewport" content="width=device-width">
+
+        <title>Paint Job Packer &ndash; Carsmaniac</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav>
+            <div id="centre-nav">
+                <a href="../">
+                    <img src="images/cm-logo.jpg">
+                    <h3>Carsmaniac</h3>
+                </a>
+            </div> <!-- #centre-nav -->
+        </nav>
+        <main>
+            <div id="wrapper">
+                <h1 class="centre">Paint Job Packer</h1>
+                <p class="centre">A lightweight paint job mod making tool for ATS and ETS 2</p>
+                <img src="images/paint-job-packer-screenshot.png">
+                <h2>Features</h2>
+                <ul>
+                    <li>Cross-platform support</li>
+                    <li>Support for player-owned trailers, including those from DLCs</li>
+                    <li>Support for trucks using the newer accessory-based paint job system, like the Scania S and MAN TGX Euro 6</li>
+                    <li>Support for as many vehicles as you like in a single mod</li>
+                    <li>Built-in support for >100 truck and trailer mods, full list <a href="https://github.com/Carsmaniac/paintjob-packer/blob/master/library/mod%20links.md">here</a></li>
+                    <li>Support for separate paint jobs for each cabin of a truck, in case a single texture doesn't work for all of them</li>
+                    <li>Optionally includes readymade 4k templates for each vehicle, which can be downloaded separately <a href="https://forum.scssoft.com/viewtopic.php?f=33&t=272386">here</a> (ETS 2) and <a href="https://forum.scssoft.com/viewtopic.php?f=199&t=288778">here</a> (ATS)</li>
+                </ul>
+                <p>See the <a href="https://forum.scssoft.com/viewtopic.php?f=33&t=282956">thread on the SCS Forums</a> for more details, and to leave feedback or get support</p>
+
+                <div id="download-links">
+                    <h2>Download</h2>
+
+                    <div class="download">
+                        <p>Latest version: 1.9 (released 2023-05-17)</p>
+                        <p>Full changelog on <a href="https://github.com/Carsmaniac/paintjob-packer/releases">GitHub</a></p>
+                    </div>
+
+                    <div class="download">
+                        <p><a href="#">Windows</a> <span class="small">(.exe installer, 3.14 MB)</span></p>
+                        <ul>
+                            <li>Tested on Windows 10 and 11</li>
+                            <li>Windows 7 not supported</li>
+                        </ul>
+                        <a class="small" href="#">(mirror download)</a>
+                    </div> <!-- .download Windows -->
+
+                    <div class="download">
+                        <p><a href="#">Windows with included templates</a> <span class="small">(.exe installer, 1.72 GB)</span></p>
+                        <ul>
+                            <li>Alternate download with 4k placeholder templates included</li>
+                            <li>Templates can be downloaded separately <a href="https://forum.scssoft.com/viewtopic.php?f=33&t=272386">here</a> (ETS 2) and <a href="https://forum.scssoft.com/viewtopic.php?f=199&t=288778">here</a> (ATS)</li>
+                        </ul>
+                        <a class="small" href="#">(mirror download)</a>
+                    </div> <!-- .download Windows with templates-->
+
+                    <div class="download">
+                        <p><a href="#">macOS</a> <span class="small">(.app, 3.47 MB)</span></p>
+                        <ul>
+                            <li>Tested on macOS 11 Big Sur</li>
+                            <li>Tested on Intel, should work on Apple Silicon too</li>
+                        </ul>
+                        <a class="small" href="#">(mirror download)</a>
+                    </div> <!-- .download macOS -->
+
+                    <div class="download">
+                        <p><a href="#">Linux</a> <span class="small">(deb package, 2.06 MB)</span></p>
+                        <ul>
+                            <li>Tested on Ubuntu (Debian), Fedora (Red Hat) and Manjuro (Arch)</li>
+                            <li>Tested with GNOME, XFCE and KDE desktop environments</li>
+                        </ul>
+                        <a class="small" href="#">(mirror download)</a>
+                    </div> <!-- .download Linux -->
+
+                    <p>Paint Job Packer is open source, its source code is available on <a href="https://github.com/Carsmaniac/paintjob-packer">GitHub</a>
+                    </p>
+                </div> <!-- #download-links -->
+
+                <h2>Support Paint Job Packer</h2>
+                <p>If you enjoy Paint Job Packer and you would like to support its development, you can leave me a tip or support me with a monthly donation at <a href="https://ko-fi.com/carsmaniac">Ko-fi</a></li>
+
+                <h2>Using Paint Job Packer</h2>
+                <p>There's a full video guide to using Paint Job Packer available <a href="https://www.youtube.com/watch?v=HJV8_X3P9k8">on YouTube</a>.
+                <p>Paint Job Packer doesn't make completed mods from the get-go. Instead it makes what I call "custom example mods", giving you all the files you need for your mod, but with placeholders standing in for every image/texture. You then go through and replace all the placeholder images with your own to complete the mod. Since you usually have to test and tweak a paint job many times before it's ready, generating paint jobs this way means you only have to run the program once.</p>
+
+                <h3>Image editor requirements</h3>
+                <p>Paint Job Packer requires an image editor that can save DDS files. DDS is a special image format used to save textures for many games, including both trucksim games. You can use any of the following:<p>
+                <ul>
+                    <li>Photoshop with its <a href="https://fnordware.blogspot.com/2014/09/dds-plug-in-for-after-effects-and.html">DDS plugin</a></li>
+                    <li><a href="https://www.gimp.org/downloads/">GIMP</a></li>
+                    <li><a href="https://www.getpaint.net/download.html">Paint.NET</a></li>
+                    <li>Or you could use any program you like and convert your images to DDS using <a href="https://www.mwgfx.co.uk/programs/dxtbmp.htm">DXTBmp</a></li>
+                </ul>
+
+                <h3>1. Generate base files using Paint Job Packer</h3>
+                <ul>
+                    <li>Make a single paint job for a single vehicle, or a pack with support for multiple vehicles</li>
+                    <li>Support each truck's biggest cabin only or all of them, with a single paint job per vehicle or separate ones for each cabin</li>
+                    <li>Optionally use 4k/2k templates as placeholder files (if installed)</li>
+                </ul>
+
+                <h3>2. Replace mod manager files</h3>
+                <ul>
+                    <li><span class="monospace">Mod_Manager_Description.txt</span> and <span class="monospace">Mod_Manager_Image.jpg</span></li>
+                    <li>The description already contains a pre-generated list of vehicles supported by your mod</li>
+                    <li>The image must be a 276 x 162 JPEG</li>
+                </ul>
+
+                <h3>3. Replace icon</h3>
+                <ul>
+                    <li><span class="monospace">material/ui/accessory/&lt;paint job&gt;_icon.dds</span></li>
+                    <li>Must be a 256 x 64 DDS</li>
+                    <li>If you want your icon to match the vanilla paint jobs, use the placeholder image as a guide for size & shape</li>
+                </ul>
+
+                <h3>4. Replace vehicle textures</h3>
+                <ul>
+                    <li><span class="monospace">vehicle/truck/upgrade/paintjob/&lt;paint job&gt;/&lt;vehicle&gt;</span> and/or <span class="monospace">vehicle/trailer_owned/upgrade/paintjob/&lt;paint job&gt;/&lt;vehicle&gt;</span></li>
+                    <li>These are the main files of your mod, which determine what your paint job will actually look like in-game</li>
+                    <li>Save each DDS in DXT5 format with mipmaps, if possible</li>
+                    <li>Ensure every file's height and width is a power of 2 (e.g. 16, 64, 2048, 4096 etc)</li>
+                    <li>You can download template packs <a href="https://forum.scssoft.com/viewtopic.php?f=33&t=272386">here</a> (ETS 2) and <a href="https://forum.scssoft.com/viewtopic.php?f=199&t=288778">here</a> (ATS)</li>
+                </ul>
+            </div> <!-- #wrapper -->
+        </main>
+    </body>
+</html>
