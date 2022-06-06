@@ -24,6 +24,7 @@ html {
     font-weight: 400;
     font-size: 62.5%;
     text-align: left;
+    /* Might sound crazy but it ain't no lie, baby, */
     color: #BABABA;
 }
 
@@ -137,12 +138,28 @@ nav a {
     overflow: hidden;
 }
 
+.download ul {
+    margin-top: 1.1rem;
+}
+
 .download p, .download li {
     margin-bottom: 0.5rem;
 }
 
 .download {
-    margin-bottom: 3.5rem;
+    margin-bottom: 4rem;
+}
+
+.os-image {
+    max-width: 3rem;
+    display: inline-block;
+    float: left;
+    margin-right: 0.7rem;
+}
+
+.os-name {
+    padding-top: 0.4rem;
+    float: none;
 }
 
 main h3 {
