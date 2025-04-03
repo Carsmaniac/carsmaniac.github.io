@@ -26,6 +26,7 @@ html {
     text-align: left;
     /* Might sound crazy but it ain't no lie, baby, */
     color: #BABABA;
+    height: 100%;
 }
 
 main {
@@ -87,6 +88,12 @@ img {
 .small {
     font-size: 1.3rem;
     font-weight: 300;
+}
+
+.fullscreen {
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
 }
 
 #wrapper {
