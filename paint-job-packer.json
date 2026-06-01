@@ -1,7 +1,7 @@
 {
     "format_version": 1,
-    "version": "2.0",
-    "changelog": "Complete rewrite with multiple paint jobs, saving and loading and a new look",
+    "version": "2.0.1",
+    "changelog": "Fixed some missing accessories, and a crash when clicking Export on Windows",
     "github_link": "https://github.com/Carsmaniac/paintjob-packer?tab=contributing-ov-file",
     "translation_link": "https://hosted.weblate.org/projects/paint-job-packer/paint-job-packer/"
 }
